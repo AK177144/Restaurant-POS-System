@@ -14,6 +14,7 @@ The application provides restaurant owners and cashiers with a complete mobile s
 
 Designed with a modular architecture and cloud-based backend, the application delivers a fast, scalable, and user-friendly experience suitable for small and medium-sized restaurants.
 
+
 ## 📑 Table of Contents
 
 - [Overview](#-overview)
@@ -42,82 +43,8 @@ The project follows a modular software architecture developed using React Native
 The primary objective of this project is to provide a lightweight, scalable, and easy-to-use restaurant management solution while demonstrating modern mobile application development practices.
 
 
+
 # ✨ Features
-
-The Restaurant POS System provides a comprehensive set of features to simplify restaurant operations and improve billing efficiency.
-
-## 🔐 Authentication
-
-- Secure user login using Supabase Authentication
-- Persistent user sessions
-- Safe logout with confirmation dialog
-
----
-
-## 🍽️ Menu Management
-
-- Create, update, and delete menu categories
-- Create, update, and delete menu items
-- Assign menu items to categories
-- Mark menu items as **Available** or **Unavailable**
-- Search and organize menu items efficiently
-
----
-
-## 🧾 Billing System
-
-- Fast menu item search
-- Category-based menu filtering
-- Interactive shopping cart
-- Increase or decrease item quantity
-- Automatic bill number generation
-- Customer information collection
-- Optional WhatsApp invoice support
-- Real-time total amount calculation
-- Generate professional customer bills
-
----
-
-## 📜 Bill History
-
-- View previously generated bills
-- Access complete bill details
-- Display purchased items
-- Store customer information
-- View bill totals and timestamps
-
----
-
-## 📊 Sales Dashboard
-
-- Total revenue overview
-- Today's sales summary
-- Total bills generated
-- Simple sales analytics
-
----
-
-## 📋 Customer Menu
-
-- Category-wise menu browsing
-- Display only available menu items
-- Clean and customer-friendly interface
-
----
-
-## 📱 Mobile Experience
-
-- Responsive Android interface
-- Touch-friendly navigation
-- Optimized billing workflow
-- Smooth user experience
-
-## 📱 Application Screenshots
-
-### Login Screen
-
-![Login](screenshots/login.png)
-
 ---
 
 ### Dashboard
@@ -174,42 +101,6 @@ The Restaurant POS System provides a comprehensive set of features to simplify r
 
 
 # 🧩 Application Modules
-
-The Restaurant POS System is organized into multiple functional modules, each designed to handle a specific aspect of restaurant operations.
-
-| Module | Description |
-|---------|-------------|
-| 🔐 Authentication | Secure login and session management using Supabase Authentication. |
-| 🍽️ Menu Management | Manage menu categories and menu items with availability control. |
-| 🧾 Billing | Generate customer bills, manage shopping cart, and calculate totals. |
-| 📜 Bill History | View previously generated bills and complete billing details. |
-| 📊 Sales Dashboard | Monitor total revenue, today's sales, and billing statistics. |
-| 📋 Customer Menu | Browse available menu items category-wise through a clean interface. |
-
-
-
-# 🏗️ System Architecture
-
-```text
-                    Restaurant POS System
-                             │
-                             ▼
-                  React Native Mobile App
-                             │
-        ┌────────────────────┼────────────────────┐
-        │                    │                    │
-        ▼                    ▼                    ▼
-Authentication          Business Logic         User Interface
-        │                    │                    │
-        └────────────────────┼────────────────────┘
-                             │
-                             ▼
-                        Supabase Backend
-        ┌────────────────────┼────────────────────┐
-        │                    │                    │
-        ▼                    ▼                    ▼
- Authentication       PostgreSQL Database     REST API
-```
 
 
 # 🛠️ Technology Stack
@@ -270,63 +161,6 @@ Restaurant-POS-System
 
 
 # ⚙️ Installation
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/AK177144/Restaurant-POS-System.git
-```
-
----
-
-## 2. Navigate to the Project Directory
-
-```bash
-cd Restaurant-POS-System
-```
-
----
-
-## 3. Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-## 4. Configure Environment Variables
-
-Create a `.env` file in the project root.
-
-```env
-EXPO_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
-EXPO_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
-```
-
----
-
-## 5. Start the Development Server
-
-```bash
-npx expo start
-```
-
----
-
-## 6. Run the Application
-
-You can run the application using:
-
-- 📱 Expo Go (Android)
-- 🤖 Android Emulator
-- 🌐 Web Browser (limited support)
-
-
-# 📖 Usage Guide
-
-After logging into the application, users can perform the following operations:
-
 ### 🍽️ Menu Management
 
 - Create menu categories.
@@ -371,58 +205,6 @@ After logging into the application, users can perform the following operations:
 
 
 # 🏷️ Release Information
-
-## Current Version
-
-**v1.0.0**
-
-### Release Highlights
-
-- Secure Authentication
-- Complete Menu Management
-- Restaurant Billing System
-- WhatsApp Invoice Support
-- Bill History
-- Sales Dashboard
-- Customer Menu Viewer
-
-The latest release APK will be available from the **Releases** section of this repository.
-
-
-# 🛣️ Future Roadmap
-
-The Restaurant POS System is designed with scalability in mind. Future releases will focus on expanding the application's capabilities to support larger restaurants and improve operational efficiency.
-
-## Version 1.1
-
-- QR Code Digital Menu
-- Printable PDF Bills
-- Customer Search
-- Enhanced Sales Analytics
-- Discount and Coupon Support
-
----
-
-## Version 1.2
-
-- Inventory Management
-- Expense Management
-- Profit & Loss Dashboard
-- Kitchen Order Display (KDS)
-- Low Stock Notifications
-
----
-
-## Version 2.0
-
-- Multi-Branch Restaurant Support
-- Employee Management
-- Role-Based Access Control
-- Cloud Synchronization
-- Online Ordering Integration
-- Table Reservation System
-- Customer Loyalty Program
-- UPI & Card Payment Integration
 
 
 # 📄 License
