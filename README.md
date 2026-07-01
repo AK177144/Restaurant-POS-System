@@ -173,6 +173,18 @@ The Restaurant POS System provides a comprehensive set of features to simplify r
 ![View Menu](screenshots/view-menu.png)
 
 
+# 🧩 Application Modules
+
+The Restaurant POS System is organized into multiple functional modules, each designed to handle a specific aspect of restaurant operations.
+
+| Module | Description |
+|---------|-------------|
+| 🔐 Authentication | Secure login and session management using Supabase Authentication. |
+| 🍽️ Menu Management | Manage menu categories and menu items with availability control. |
+| 🧾 Billing | Generate customer bills, manage shopping cart, and calculate totals. |
+| 📜 Bill History | View previously generated bills and complete billing details. |
+| 📊 Sales Dashboard | Monitor total revenue, today's sales, and billing statistics. |
+| 📋 Customer Menu | Browse available menu items category-wise through a clean interface. |
 
 
 
