@@ -188,6 +188,28 @@ The Restaurant POS System is organized into multiple functional modules, each de
 
 
 
+# 🏗️ System Architecture
+
+```text
+                    Restaurant POS System
+                             │
+                             ▼
+                  React Native Mobile App
+                             │
+        ┌────────────────────┼────────────────────┐
+        │                    │                    │
+        ▼                    ▼                    ▼
+Authentication          Business Logic         User Interface
+        │                    │                    │
+        └────────────────────┼────────────────────┘
+                             │
+                             ▼
+                        Supabase Backend
+        ┌────────────────────┼────────────────────┐
+        │                    │                    │
+        ▼                    ▼                    ▼
+ Authentication       PostgreSQL Database     REST API
+```
 
 
 
