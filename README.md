@@ -49,55 +49,55 @@ The primary objective of this project is to provide a lightweight, scalable, and
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.jpeg)
 
 ---
 
 ### Billing Interface
 
-![Billing](screenshots/billing.png)
+![Billing](screenshots/billing.jpeg)
 
 ---
 
 ### Bill Details
 
-![Bill Details](screenshots/bill-details.png)
+![Bill Details](screenshots/bill-details.jpeg)
 
 ---
 
 ### Bill History
 
-![Bill History](screenshots/bill-history.png)
+![Bill History](screenshots/bill-history.jpeg)
 
 ---
 
 ### Current Order
 
-![Current Order](screenshots/current-order.png)
+![Current Order](screenshots/current-order.jpeg)
 
 ---
 
 ### Menu Items
 
-![Menu Items](screenshots/menu-items.png)
+![Menu Items](screenshots/menu-items.jpeg)
 
 ---
 
 ### Menu Management
 
-![Menu Management](screenshots/menu-management.png)
+![Menu Management](screenshots/menu-management.jpeg)
 
 ---
 
 ### Sales dashboard
 
-![Sales Dashboard](screenshots/sale-dashboard.png)
+![Sales Dashboard](screenshots/sale-dashboard.jpeg)
 
 ---
 
 ### View Menu
 
-![View Menu](screenshots/view-menu.png)
+![View Menu](screenshots/view-menu.jpeg)
 
 
 # 🧩 Application Modules
