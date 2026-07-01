@@ -212,9 +212,266 @@ Authentication          Business Logic         User Interface
 ```
 
 
+# 🛠️ Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React Native | Developed for Android devices using React Native and Expo. |
+| Expo SDK 54 | Development, testing, and deployment |
+| TypeScript | Static typing and improved maintainability |
+| Supabase | Backend-as-a-Service |
+| PostgreSQL | Relational database management |
+| React Navigation | Screen navigation |
+| Async Storage | Local session persistence |
+| Git & GitHub | Version control and project hosting |
 
 
+# 🗄️ Database Schema
+
+The application uses **Supabase PostgreSQL** as the backend database for storing restaurant data, billing information, and user authentication.
+
+| Table | Purpose |
+|---------|---------|
+| **categories** | Stores menu categories (e.g., Starters, Main Course, Desserts, Beverages). |
+| **menu_items** | Stores menu items, prices, category associations, and availability status. |
+| **bills** | Stores bill details, customer information, bill number, total amount, and billing timestamp. |
+| **bill_items** | Stores individual items included in each generated bill along with quantities and prices. |
+| **auth.users** | Managed by Supabase Authentication for secure user login and session management. |
 
 
+# 📁 Project Structure
+
+```text
+Restaurant-POS-System
+│
+├── assets/                     # Application icons and images
+│
+├── src/
+│   ├── components/
+│   │   ├── billing/
+│   │   └── common/
+│   │
+│   ├── hooks/
+│   │
+│   ├── navigation/
+│   │
+│   ├── screens/
+│   │
+│   ├── services/
+│   │
+│   └── utils/
+│
+├── App.tsx
+├── package.json
+├── tsconfig.json
+├── README.md
+└── LICENSE
+```
 
 
+# ⚙️ Installation
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/AK177144/Restaurant-POS-System.git
+```
+
+---
+
+## 2. Navigate to the Project Directory
+
+```bash
+cd Restaurant-POS-System
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 4. Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+EXPO_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+EXPO_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
+
+---
+
+## 5. Start the Development Server
+
+```bash
+npx expo start
+```
+
+---
+
+## 6. Run the Application
+
+You can run the application using:
+
+- 📱 Expo Go (Android)
+- 🤖 Android Emulator
+- 🌐 Web Browser (limited support)
+
+
+# 📖 Usage Guide
+
+After logging into the application, users can perform the following operations:
+
+### 🍽️ Menu Management
+
+- Create menu categories.
+- Add new menu items.
+- Update item details.
+- Mark items as available or unavailable.
+
+---
+
+### 🧾 Billing
+
+- Browse menu items.
+- Add items to the cart.
+- Adjust item quantities.
+- Enter optional customer information.
+- Generate bills.
+- Share invoices via WhatsApp.
+
+---
+
+### 📜 Bill History
+
+- View previously generated bills.
+- Review bill details.
+- Access purchased item information.
+
+---
+
+### 📊 Sales Dashboard
+
+- View today's sales.
+- Monitor total revenue.
+- Track billing statistics.
+
+---
+
+### 📋 Customer Menu
+
+- Browse available menu items.
+- View categories.
+- Display only currently available dishes.
+
+
+# 🏷️ Release Information
+
+## Current Version
+
+**v1.0.0**
+
+### Release Highlights
+
+- Secure Authentication
+- Complete Menu Management
+- Restaurant Billing System
+- WhatsApp Invoice Support
+- Bill History
+- Sales Dashboard
+- Customer Menu Viewer
+
+The latest release APK will be available from the **Releases** section of this repository.
+
+
+# 🛣️ Future Roadmap
+
+The Restaurant POS System is designed with scalability in mind. Future releases will focus on expanding the application's capabilities to support larger restaurants and improve operational efficiency.
+
+## Version 1.1
+
+- QR Code Digital Menu
+- Printable PDF Bills
+- Customer Search
+- Enhanced Sales Analytics
+- Discount and Coupon Support
+
+---
+
+## Version 1.2
+
+- Inventory Management
+- Expense Management
+- Profit & Loss Dashboard
+- Kitchen Order Display (KDS)
+- Low Stock Notifications
+
+---
+
+## Version 2.0
+
+- Multi-Branch Restaurant Support
+- Employee Management
+- Role-Based Access Control
+- Cloud Synchronization
+- Online Ordering Integration
+- Table Reservation System
+- Customer Loyalty Program
+- UPI & Card Payment Integration
+
+
+# 📄 License
+
+Copyright © 2026 Anandu K.
+
+This project is provided for portfolio and educational purposes.
+
+No part of this software may be copied, modified, redistributed, sublicensed, sold, reverse engineered, or used commercially without prior written permission from the author.
+
+For licensing or commercial usage, please contact the author.
+
+
+# 👨‍💻 Author
+
+## Anandu K
+
+Computer Science Engineering Student
+
+### Areas of Interest
+
+- Mobile Application Development
+- React Native
+- TypeScript
+- Internet of Things (IoT)
+- Machine Learning
+- Full Stack Development
+
+### GitHub
+
+https://github.com/AK177144
+
+# 🙏 Acknowledgements
+
+Special thanks to the following technologies and communities that made this project possible.
+
+- React Native
+- Expo
+- TypeScript
+- Supabase
+- PostgreSQL
+- React Navigation
+- Open Source Community
+
+Their tools, documentation, and community support greatly contributed to the successful development of this project.
+
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+Your support motivates further development and future enhancements.
