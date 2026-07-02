@@ -22,11 +22,16 @@ export default function AppNavigator() {
 
   useEffect(() => {
     async function checkSession() {
-      const {
-        data: { session },
-      } = await supabase.auth.getSession();
+      try {
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
 
-      setSession(session);
+        setSession(session);
+      } catch (error) {
+        console.log("Supabase error:", error);
+        setSession(null);
+      }
     }
 
     checkSession();
