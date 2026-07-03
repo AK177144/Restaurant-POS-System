@@ -1,4 +1,5 @@
 import { ScrollView, TouchableOpacity, Text } from "react-native";
+import { Colors } from "../../theme/colors";
 
 const categoryIcons: { [key: string]: string } = {
   All: "🍽",
@@ -70,7 +71,7 @@ export default function CategoryTabs({
       horizontal
       showsHorizontalScrollIndicator={false}
       style={{
-        backgroundColor: "white",
+        backgroundColor: Colors.background,
         maxHeight: 46, // 👈 Limits the total height
         flexGrow: 0, // 👈 Prevents expansion
       }}

@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import { useFocusEffect } from "@react-navigation/native";
 
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function BillHistoryScreen({
   navigation,
@@ -66,7 +67,7 @@ export default function BillHistoryScreen({
               })
             }
             style={{
-              backgroundColor: "#2563EB",
+              backgroundColor: Colors.billing,
               padding: 10,
               borderRadius: 8,
               marginTop: 10,
@@ -74,7 +75,7 @@ export default function BillHistoryScreen({
           >
             <Text
               style={{
-                color: "white",
+                color: Colors.text,
                 textAlign: "center",
                 fontWeight: "bold",
               }}

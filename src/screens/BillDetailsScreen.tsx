@@ -10,6 +10,7 @@ import {
 } from "react-native";
 
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function BillDetailsScreen({ route, navigation }: any) {
   const { billId } = route.params;
@@ -275,7 +276,7 @@ Please visit again!
           )
         }
         style={{
-          backgroundColor: "#25D366",
+          backgroundColor: Colors.category,
           padding: 15,
           borderRadius: 8,
           marginTop: 20,
@@ -284,7 +285,7 @@ Please visit again!
       >
         <Text
           style={{
-            color: "white",
+            color: Colors.text,
             textAlign: "center",
             fontWeight: "bold",
           }}
@@ -296,7 +297,7 @@ Please visit again!
       <TouchableOpacity
         onPress={deleteBill}
         style={{
-          backgroundColor: "#DC2626",
+          backgroundColor: Colors.logout,
           padding: 15,
           borderRadius: 8,
           marginTop: 20,
@@ -305,7 +306,7 @@ Please visit again!
       >
         <Text
           style={{
-            color: "white",
+            color: Colors.text,
             textAlign: "center",
             fontWeight: "bold",
           }}

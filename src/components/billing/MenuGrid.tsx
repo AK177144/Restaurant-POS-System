@@ -1,4 +1,5 @@
 import { FlatList, TouchableOpacity, View, Text } from "react-native";
+import { Colors } from "../../theme/colors";
 
 type MenuGridProps = {
   menuItems: any[];
@@ -55,7 +56,7 @@ export default function MenuGrid({
             onPress={() => addToCart(item)}
             style={{
               width: "48%",
-              backgroundColor: "white",
+              backgroundColor: Colors.background,
               borderRadius: 12,
               padding: 15,
               marginBottom: 12,
@@ -114,7 +115,7 @@ export default function MenuGrid({
               >
                 <Text
                   style={{
-                    color: "white",
+                    color: Colors.text,
                     textAlign: "center",
                     fontWeight: "bold",
                   }}

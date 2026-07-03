@@ -1,4 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
+import { Colors } from "../../theme/colors";
 
 type Props = {
   item: any;
@@ -16,7 +17,7 @@ export default function CartItem({
       style={{
         marginBottom: 15,
         borderBottomWidth: 1,
-        borderBottomColor: "#E5E7EB",
+        borderBottomColor: Colors.border,
         paddingBottom: 10,
       }}
     >
@@ -31,7 +32,7 @@ export default function CartItem({
 
       <Text
         style={{
-          color: "#6B7280",
+          color: Colors.text,
           marginTop: 4,
         }}
       >
@@ -55,7 +56,7 @@ export default function CartItem({
           <TouchableOpacity
             onPress={() => decreaseQuantity(item.id)}
             style={{
-              backgroundColor: "#DC2626",
+              backgroundColor: Colors.background,
               width: 35,
               height: 35,
               borderRadius: 18,
@@ -65,7 +66,7 @@ export default function CartItem({
           >
             <Text
               style={{
-                color: "white",
+                color: Colors.text,
                 fontWeight: "bold",
                 fontSize: 18,
               }}
@@ -87,7 +88,7 @@ export default function CartItem({
           <TouchableOpacity
             onPress={() => increaseQuantity(item.id)}
             style={{
-              backgroundColor: "#16A34A",
+              backgroundColor: Colors.menu,
               width: 35,
               height: 35,
               borderRadius: 18,
@@ -97,7 +98,7 @@ export default function CartItem({
           >
             <Text
               style={{
-                color: "white",
+                color: Colors.text,
                 fontWeight: "bold",
                 fontSize: 18,
               }}

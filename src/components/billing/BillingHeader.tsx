@@ -1,4 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { Colors } from "../../theme/colors";
 
 type BillingHeaderProps = {
   sendWhatsApp: boolean;
@@ -27,12 +28,12 @@ export default function BillingHeader({
   return (
     <View
       style={{
-        backgroundColor: "white",
+        backgroundColor: Colors.background,
         paddingHorizontal: 15,
         paddingTop: 10,
         paddingBottom: 8,
         borderBottomWidth: 1,
-        borderColor: "#E5E7EB",
+        borderColor: Colors.border,
       }}
     >
       <Text

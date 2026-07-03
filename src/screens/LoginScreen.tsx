@@ -2,6 +2,7 @@ import { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function LoginScreen({ navigation }: any) {
   const [email, setEmail] = useState("");
@@ -69,14 +70,14 @@ export default function LoginScreen({ navigation }: any) {
       <TouchableOpacity
         onPress={handleLogin}
         style={{
-          backgroundColor: "#2563eb",
+          backgroundColor: Colors.success,
           padding: 15,
           borderRadius: 8,
         }}
       >
         <Text
           style={{
-            color: "white",
+            color: Colors.text,
             textAlign: "center",
             fontWeight: "bold",
           }}

@@ -10,6 +10,7 @@ import {
 } from "react-native";
 
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function MenuManagementScreen({ navigation }: any) {
   const [categoryName, setCategoryName] = useState("");
@@ -106,7 +107,7 @@ export default function MenuManagementScreen({ navigation }: any) {
             <TouchableOpacity
               onPress={addCategory}
               style={{
-                backgroundColor: "#2563EB",
+                backgroundColor: Colors.category,
                 padding: 15,
                 borderRadius: 8,
                 marginBottom: 20,
@@ -114,7 +115,7 @@ export default function MenuManagementScreen({ navigation }: any) {
             >
               <Text
                 style={{
-                  color: "white",
+                  color: Colors.text,
                   textAlign: "center",
                   fontWeight: "bold",
                 }}
@@ -152,7 +153,7 @@ export default function MenuManagementScreen({ navigation }: any) {
                 })
               }
               style={{
-                backgroundColor: "#2563EB",
+                backgroundColor: Colors.billing,
                 padding: 10,
                 borderRadius: 6,
                 marginBottom: 8,
@@ -160,7 +161,7 @@ export default function MenuManagementScreen({ navigation }: any) {
             >
               <Text
                 style={{
-                  color: "white",
+                  color: Colors.text,
                   textAlign: "center",
                 }}
               >
@@ -172,14 +173,14 @@ export default function MenuManagementScreen({ navigation }: any) {
             <TouchableOpacity
               onPress={() => deleteCategory(item.id)}
               style={{
-                backgroundColor: "#DC2626",
+                backgroundColor: Colors.logout,
                 padding: 10,
                 borderRadius: 6,
               }}
             >
               <Text
                 style={{
-                  color: "white",
+                  color: Colors.text,
                   textAlign: "center",
                 }}
               >

@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { Colors } from "../../theme/colors";
 
 export default function EmptyCart() {
   return (
@@ -28,7 +29,7 @@ export default function EmptyCart() {
 
       <Text
         style={{
-          color: "#6B7280",
+          color: Colors.text,
           marginTop: 5,
           textAlign: "center",
         }}

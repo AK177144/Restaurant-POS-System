@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, FlatList, Alert } from "react-native";
 
 import CartItem from "./CartItem";
 import EmptyCart from "./EmptyCart";
+import { Colors } from "../../theme/colors";
 
 type CurrentOrderPanelProps = {
   cart: any[];
@@ -40,9 +41,9 @@ export default function CurrentOrderPanel({
   return (
     <View
       style={{
-        backgroundColor: "white",
+        backgroundColor: Colors.background,
         borderTopWidth: 1,
-        borderColor: "#E5E7EB",
+        borderColor: Colors.border,
         padding: 15,
       }}
     >
@@ -83,7 +84,7 @@ export default function CurrentOrderPanel({
         style={{
           marginTop: 10,
           borderTopWidth: 1,
-          borderColor: "#E5E7EB",
+          borderColor: Colors.border,
           paddingTop: 15,
         }}
       >
@@ -110,7 +111,7 @@ export default function CurrentOrderPanel({
           style={{
             fontWeight: "bold",
             fontSize: 22,
-            color: "#16A34A",
+            color: Colors.primary,
             marginTop: 10,
           }}
         >
@@ -120,7 +121,7 @@ export default function CurrentOrderPanel({
         <TouchableOpacity
           onPress={confirmClearCart}
           style={{
-            backgroundColor: "#DC2626",
+            backgroundColor: Colors.background,
             padding: 12,
             borderRadius: 8,
             marginTop: 15,
@@ -128,7 +129,7 @@ export default function CurrentOrderPanel({
         >
           <Text
             style={{
-              color: "white",
+              color: Colors.text,
               textAlign: "center",
               fontWeight: "bold",
             }}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { View, Text, ScrollView, RefreshControl } from "react-native";
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function SalesDashboardScreen() {
   const [todaySales, setTodaySales] = useState(0);
@@ -59,7 +60,7 @@ export default function SalesDashboardScreen() {
     return (
       <View
         style={{
-          backgroundColor: "white",
+          backgroundColor: Colors.background,
           borderRadius: 15,
           padding: 20,
           marginBottom: 18,
@@ -69,7 +70,7 @@ export default function SalesDashboardScreen() {
         <Text
           style={{
             fontSize: 15,
-            color: "#666",
+            color: Colors.text,
           }}
         >
           {title}
@@ -79,7 +80,7 @@ export default function SalesDashboardScreen() {
           style={{
             fontSize: 30,
             fontWeight: "bold",
-            color: "#2563EB",
+            color: Colors.textLight,
             marginTop: 8,
           }}
         >
@@ -95,7 +96,7 @@ export default function SalesDashboardScreen() {
     <ScrollView
       style={{
         flex: 1,
-        backgroundColor: "#F4F6F8",
+        backgroundColor: Colors.background,
       }}
       contentContainerStyle={{
         padding: 20,
@@ -127,7 +128,7 @@ export default function SalesDashboardScreen() {
       {billCount === 0 ? (
         <View
           style={{
-            backgroundColor: "white",
+            backgroundColor: Colors.background,
             padding: 40,
             borderRadius: 15,
             elevation: 3,
@@ -137,7 +138,7 @@ export default function SalesDashboardScreen() {
             style={{
               textAlign: "center",
               fontSize: 18,
-              color: "#666",
+              color: Colors.text,
             }}
           >
             No sales recorded today.

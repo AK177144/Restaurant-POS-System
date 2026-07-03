@@ -2,6 +2,7 @@ import { supabase } from "../services/supabase";
 import { Alert } from "react-native";
 import { useState, useEffect } from "react";
 import { View, Text, TextInput, TouchableOpacity, FlatList, } from "react-native";
+import { Colors } from "../theme/colors";
 
 export default function MenuItemsScreen({ route }: any) {
   const { categoryId, categoryName } = route.params;
@@ -133,7 +134,7 @@ export default function MenuItemsScreen({ route }: any) {
       <TouchableOpacity
         onPress={addMenuItem}
         style={{
-          backgroundColor: "#2563EB",
+          backgroundColor: Colors.category,
           padding: 15,
           borderRadius: 8,
           marginBottom: 20,
@@ -141,7 +142,7 @@ export default function MenuItemsScreen({ route }: any) {
       >
         <Text
           style={{
-            color: "white",
+            color: Colors.text,
             textAlign: "center",
             fontWeight: "bold",
           }}
@@ -200,7 +201,7 @@ export default function MenuItemsScreen({ route }: any) {
             <TouchableOpacity
               onPress={() => toggleAvailability(item.id, item.is_available)}
               style={{
-                backgroundColor: "#EA580C",
+                backgroundColor: Colors.accent,
                 padding: 10,
                 borderRadius: 6,
                 marginBottom: 8,
@@ -208,7 +209,7 @@ export default function MenuItemsScreen({ route }: any) {
             >
               <Text
                 style={{
-                  color: "white",
+                  color: Colors.text,
                   textAlign: "center",
                 }}
               >
@@ -219,14 +220,14 @@ export default function MenuItemsScreen({ route }: any) {
             <TouchableOpacity
               onPress={() => deleteMenuItem(item.id)}
               style={{
-                backgroundColor: "#DC2626",
+                backgroundColor: Colors.logout,
                 padding: 10,
                 borderRadius: 6,
               }}
             >
               <Text
                 style={{
-                  color: "white",
+                  color: Colors.text,
                   textAlign: "center",
                 }}
               >

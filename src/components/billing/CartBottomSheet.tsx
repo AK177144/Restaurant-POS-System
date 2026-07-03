@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, Animated } from "react-native";
 
 import CurrentOrderPanel from "./CurrentOrderPanel";
 import BillingFooter from "./BillingFooter";
+import { Colors } from "../../theme/colors";
 
 type Props = {
   cart: any[];
@@ -34,7 +35,7 @@ export default function CartBottomSheet({
   return (
     <View
       style={{
-        backgroundColor: "white",
+        backgroundColor: Colors.background,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         elevation: 12,
@@ -59,7 +60,7 @@ export default function CartBottomSheet({
             style={{
               width: 50,
               height: 5,
-              backgroundColor: "#D1D5DB",
+              backgroundColor: Colors.border,
               borderRadius: 10,
             }}
           />
@@ -77,7 +78,7 @@ export default function CartBottomSheet({
         <Text
           style={{
             marginTop: 5,
-            color: "#16A34A",
+            color: Colors.text,
             fontWeight: "bold",
             fontSize: 20,
           }}
@@ -87,7 +88,7 @@ export default function CartBottomSheet({
 
         <Text
           style={{
-            color: "#6B7280",
+            color: Colors.text,
             marginTop: 5,
           }}
         >

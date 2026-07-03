@@ -3,6 +3,7 @@ import { FlatList, View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function MenuItemsViewScreen({ route }: any) {
   const { categoryId, categoryName } = route.params;
@@ -33,7 +34,7 @@ export default function MenuItemsViewScreen({ route }: any) {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: "#F3F4F6",
+        backgroundColor: Colors.background,
         padding: 15,
       }}
     >
@@ -54,7 +55,7 @@ export default function MenuItemsViewScreen({ route }: any) {
           <Text
             style={{
               textAlign: "center",
-              color: "gray",
+              color: Colors.text,
               marginTop: 50,
               fontSize: 16,
             }}
@@ -65,7 +66,7 @@ export default function MenuItemsViewScreen({ route }: any) {
         renderItem={({ item }) => (
           <View
             style={{
-              backgroundColor: "white",
+              backgroundColor: Colors.background,
               borderRadius: 12,
               padding: 15,
               marginBottom: 12,
@@ -85,7 +86,7 @@ export default function MenuItemsViewScreen({ route }: any) {
               style={{
                 marginTop: 6,
                 fontSize: 18,
-                color: "#16A34A",
+                color: Colors.textSecondary,
                 fontWeight: "bold",
               }}
             >

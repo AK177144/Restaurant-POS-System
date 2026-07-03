@@ -7,6 +7,7 @@ import CategoryTabs from "../components/billing/CategoryTabs";
 import MenuGrid from "../components/billing/MenuGrid";
 import CartBottomSheet from "../components/billing/CartBottomSheet";
 import LoadingOverlay from "../components/billing/LoadingOverlay";
+import { Colors } from "../theme/colors";
 
 import useBilling from "../hooks/useBilling";
 
@@ -93,7 +94,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
 
-    backgroundColor: "#F3F4F6",
+    backgroundColor: Colors.background,
   },
 
   menuContainer: {

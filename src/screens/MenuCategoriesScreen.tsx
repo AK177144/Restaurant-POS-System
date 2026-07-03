@@ -8,6 +8,7 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function MenuCategoriesScreen({ navigation }: any) {
   const [categories, setCategories] = useState<any[]>([]);
@@ -59,7 +60,7 @@ export default function MenuCategoriesScreen({ navigation }: any) {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: "#F3F4F6",
+        backgroundColor: Colors.background,
         padding: 15,
       }}
     >
@@ -85,7 +86,7 @@ export default function MenuCategoriesScreen({ navigation }: any) {
               })
             }
             style={{
-              backgroundColor: "white",
+              backgroundColor: Colors.background,
               padding: 18,
               borderRadius: 12,
               marginBottom: 12,

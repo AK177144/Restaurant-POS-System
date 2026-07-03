@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, ActivityIndicator, StyleSheet } from "react-native";
+import { Colors } from "../../theme/colors";
 
 type Props = {
   visible: boolean;
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
   },
 
   container: {
-    backgroundColor: "white",
+    backgroundColor: Colors.background,
 
     width: 240,
 

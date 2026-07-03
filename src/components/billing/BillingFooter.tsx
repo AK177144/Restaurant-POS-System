@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
-
+import { Colors } from "../../theme/colors";
 type BillingFooterProps = {
   totalAmount: number;
   itemCount: number;
@@ -16,9 +16,9 @@ export default function BillingFooter({
   return (
     <View
       style={{
-        backgroundColor: "white",
+        backgroundColor: Colors.background,
         borderTopWidth: 1,
-        borderColor: "#E5E7EB",
+        borderColor: Colors.border,
 
         paddingHorizontal: 15,
         paddingTop: 10,
@@ -37,7 +37,7 @@ export default function BillingFooter({
         <View>
           <Text
             style={{
-              color: "#666",
+              color: Colors.text,
               fontSize: 14,
             }}
           >
@@ -61,7 +61,7 @@ export default function BillingFooter({
         >
           <Text
             style={{
-              color: "#666",
+              color: Colors.text,
               fontSize: 14,
             }}
           >
@@ -72,7 +72,7 @@ export default function BillingFooter({
             style={{
               fontSize: 28,
               fontWeight: "bold",
-              color: "#16A34A",
+              color: Colors.secondary,
             }}
           >
             ₹ {totalAmount}
@@ -94,7 +94,7 @@ export default function BillingFooter({
         ) : (
           <Text
             style={{
-              color: "white",
+              color: Colors.text,
               textAlign: "center",
               fontWeight: "bold",
               fontSize: 18,

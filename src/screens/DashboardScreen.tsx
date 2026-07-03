@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity, Alert, } from "react-native";
 import { supabase } from "../services/supabase";
+import { Colors } from "../theme/colors";
 
 export default function DashboardScreen({ navigation }: any) {
   async function logout() {
@@ -33,9 +34,9 @@ export default function DashboardScreen({ navigation }: any) {
       <View>
         <Text
           style={{
-            fontSize: 28,
+            fontSize: 24,
+            color: Colors.heading,
             fontWeight: "bold",
-            marginBottom: 30,
           }}
         >
           Dashboard
@@ -45,14 +46,14 @@ export default function DashboardScreen({ navigation }: any) {
         <TouchableOpacity
           onPress={() => navigation.navigate("MenuManagement")}
           style={{
-            backgroundColor: "#2563EB",
+            backgroundColor: Colors.accent,
             padding: 15,
             borderRadius: 10,
           }}
         >
           <Text
             style={{
-              color: "white",
+              color: Colors.buttonText,
               textAlign: "center",
               fontWeight: "bold",
             }}
@@ -65,7 +66,7 @@ export default function DashboardScreen({ navigation }: any) {
         <TouchableOpacity
           onPress={() => navigation.navigate("Billing")}
           style={{
-            backgroundColor: "#16A34A",
+            backgroundColor: Colors.billing,
             padding: 15,
             borderRadius: 10,
             marginTop: 15,
@@ -73,7 +74,7 @@ export default function DashboardScreen({ navigation }: any) {
         >
           <Text
             style={{
-              color: "white",
+              color: Colors.buttonText,
               textAlign: "center",
               fontWeight: "bold",
             }}
@@ -86,7 +87,7 @@ export default function DashboardScreen({ navigation }: any) {
         <TouchableOpacity
           onPress={() => navigation.navigate("MenuCategories")}
           style={{
-            backgroundColor: "#0bc6f5",
+            backgroundColor: Colors.menu,
             padding: 15,
             borderRadius: 10,
             marginTop: 15,
@@ -94,14 +95,14 @@ export default function DashboardScreen({ navigation }: any) {
         >
           <Text
             style={{
-              color: "white",
+              color: Colors.buttonText,
               textAlign: "center",
               fontWeight: "bold",
             }}
           >
             <Text
               style={{
-                color: "white",
+                color: Colors.buttonText,
                 textAlign: "center",
                 fontWeight: "bold",
               }}
@@ -115,7 +116,7 @@ export default function DashboardScreen({ navigation }: any) {
         <TouchableOpacity
           onPress={() => navigation.navigate("BillHistory")}
           style={{
-            backgroundColor: "#7C3AED",
+            backgroundColor: Colors.billing,
             padding: 15,
             borderRadius: 10,
             marginTop: 15,
@@ -123,7 +124,7 @@ export default function DashboardScreen({ navigation }: any) {
         >
           <Text
             style={{
-              color: "white",
+              color: Colors.buttonText,
               textAlign: "center",
               fontWeight: "bold",
             }}
@@ -134,7 +135,7 @@ export default function DashboardScreen({ navigation }: any) {
         <TouchableOpacity
           onPress={() => navigation.navigate("SalesDashboard")}
           style={{
-            backgroundColor: "#0891B2",
+            backgroundColor: Colors.primary,
             padding: 15,
             borderRadius: 10,
             marginTop: 15,
@@ -142,7 +143,7 @@ export default function DashboardScreen({ navigation }: any) {
         >
           <Text
             style={{
-              color: "white",
+              color: Colors.buttonText,
               textAlign: "center",
               fontWeight: "bold",
             }}
@@ -156,7 +157,7 @@ export default function DashboardScreen({ navigation }: any) {
       <TouchableOpacity
         onPress={logout}
         style={{
-          backgroundColor: "#DC2626",
+          backgroundColor: Colors.logout,
           padding: 15,
           borderRadius: 10,
           alignSelf: "center",
@@ -166,7 +167,7 @@ export default function DashboardScreen({ navigation }: any) {
       >
         <Text
           style={{
-            color: "white",
+            color: Colors.buttonText,
             textAlign: "center",
             fontWeight: "bold",
             fontSize: 16,
