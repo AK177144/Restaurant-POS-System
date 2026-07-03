@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import {
-  SafeAreaView,
   FlatList,
   TouchableOpacity,
   Text,
   View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 import { supabase } from "../services/supabase";
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { SafeAreaView, View, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 import BillingHeader from "../components/billing/BillingHeader";
 import CategoryTabs from "../components/billing/CategoryTabs";
